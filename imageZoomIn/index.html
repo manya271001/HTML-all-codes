@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zoom In Transition</title>
+    <style>
+        /* Container for the image */
+        .image-container {
+            overflow: hidden; /* Ensures the image doesn't overflow when zoomed in */
+            width: 300px; /* Adjust the width as needed */
+            height: 400px; /* Adjust the height as needed */
+        }
+
+        /* Image styles */
+        .image-container img {
+            width: 100%; /* Make the image fill the container */
+            height: 300px; /* Maintain aspect ratio */
+            transition: transform 0.5s ease; /* Apply the transition effect */
+        }
+
+        /* Zoom effect on hover */
+        .image-container:hover img {
+            transform: scale(1.4); /* Scale the image to 120% */
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="https://i.etsystatic.com/8088492/r/il/b2443d/3868645104/il_570xN.3868645104_58y5.jpg" alt="Zoom Image">
+</div>
+
+</body>
+</html>

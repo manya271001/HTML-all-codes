@@ -1,0 +1,40 @@
+/* padding: distance btw the content and border */
+/* border:  */
+/* margin: distnace away from the border */
+/* by importing link through google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
+h1{
+    color: rgb(40, 5, 72);
+    background-color: aquamarine;
+    text-align: center;
+     font-family: "Playwrite AR", cursive;
+    /* font-style: italic; */
+    font-size: 40px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    /* letter-spacing: 5px; */
+    word-spacing: 20px;
+    font-weight: 899;
+}
+.mypara{
+    color: rgb(78, 147, 8);
+    text-align: justify;
+    /* multiline property */
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: blueviolet; */
+    /* shorthand */
+    border: 3px solid brown;
+    border-radius: 10px;
+
+
+}
+.second-para{
+    /* border: 5px salmon solid; */
+    /* one side border */
+    border-left: 6px solid brown;
+    border-top: 6px solid blue;
+    border-right: 6px solid rgb(29, 29, 82);
+    border-bottom: 6px solid rgb(140, 10, 73);
+    border-top-left-radius: 3px;
+}

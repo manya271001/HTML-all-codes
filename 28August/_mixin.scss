@@ -1,0 +1,13 @@
+// partial file for all the mixin
+@mixin commonCode($para1,$para2,$para3){
+    font-size: $para1;
+    color: $para2;
+    font-size: $para3;
+}
+@mixin flexprop($x){
+ text-align: center;
+    display: flex;
+    flex-direction: $x;
+    justify-content: center;
+    align-items: center;
+}

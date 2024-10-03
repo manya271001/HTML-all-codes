@@ -1,0 +1,80 @@
+.box{
+    width: 100px;
+    height: 100px;
+    /* background-color: palegreen;
+    margin: 100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    /* shorthand: transition: all 2s ease */
+    animation-name: harrypotter;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation: example 5s infinite;
+    position: relative; 
+    overflow: hidden;
+}
+@keyframes harrypotter{
+    from{
+        background-color: darkolivegreen;
+        width: 100px;
+    }
+    to{
+        background-color: rgb(246, 123, 82);
+        width: 600px;
+    }
+}
+@keyframes example{
+    0%{
+        background-color: palegreen;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: darkolivegreen;
+        top: 0px;
+        left: 100px;
+    }
+    50%{
+        background-color: rgb(37, 82, 37);
+        top: 100px;
+        left: 100px;
+    }
+    75%{
+        background-color: rgb(243, 8, 90);
+        top: 100px;
+        left: 0px;
+    }
+    100%{
+    background-color: fuchsia;
+    top: 0px;left: 0px;
+    }
+}
+.box img{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s ease;
+    
+}
+.box:hover img{
+    transform: scale(1.2);
+}
+
+    /* background-color: palevioletred; */
+    /* transform: translateX(100px); */
+    /* transform: translateY(100px); */
+    /* for both x and y axis together */
+    /* transform: translate(100px,100px);  */
+    /* transform: rotate(-360deg); */
+    /* for increasing size */
+    /* transform: scaleX(3);    
+    transform: scaleY(3);
+     /* to increase size on both X and Y scale  */
+     /* transform: scale(3,2); */
+     /* to tilt it at perticular angle */
+     /* transform: skewX(90deg);
+     transform: skewY(90deg); */
+     /* transform: skew(120deg , 30deg); */
+

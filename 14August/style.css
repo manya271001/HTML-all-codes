@@ -1,0 +1,39 @@
+/* position: by default(static) and also we have {sticky relative absolute fixed}*/
+.conatiner{
+    height: 800px;
+    border: 3px solid rgb(195, 70, 12);
+    margin: 30px;
+    display: flex;
+}
+.box{
+    height: 100px;
+    width: 100px;
+}
+.box1{
+    /* position relative is related to its container and whenever it got moved it leaves a gap */
+    background-color: aqua;
+    position: relative;
+    top:100px;
+}
+.box2{
+    /* position relative is related to edge of the whole page(viewport) and not to the container its moments are based on its position form the whole page */
+    background-color: chartreuse;
+    position: absolute;
+    /* z-index works for overlaping and cannot be used without position property and does not work for position static and higher the z-index it will be on the top */
+    
+    left: 100px;
+    z-index: 5;
+}
+.box3{
+    /* fixed: is like postion absolute works according to the page edge and stays till the end of page */
+    background-color: crimson;
+    position: fixed;
+    top: 0px;
+    z-index:10 ;
+}
+.box4{
+    /* sticky: works as relative and stays till the end of container */
+    background-color: palevioletred;
+    position: sticky;
+    top: 0px;
+}

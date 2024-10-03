@@ -1,0 +1,79 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hamburger menu icon styling */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hidden checkbox used for toggling */
+.menu-toggle {
+    display: none;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    font-size: 18px;
+}
+
+/* Show dropdown menu when checkbox is checked */
+.menu-toggle:checked ~ .dropdown-menu {
+    display: flex;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: block;
+    }
+}

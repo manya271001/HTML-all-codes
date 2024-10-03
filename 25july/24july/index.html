@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3><em><strong>My Form</strong></em></h3>
+    <!-- get(by default) method send data through url which is not safe and post method send data to page directly -->
+    <form action="demo.php" method="post">
+    <div>
+        <label for="psw">Enter Password</label>
+        <input type="password"  id="psw" placeholder="Enter Password">
+    </div><br><br>
+    <div>
+        <label for="eligible">Are You Eligible?</label>
+        <input type="checkbox" id="eligible">
+    </div><br><br>
+    <div>
+        <label for="hobby">Select Hobby</label> <br><br>
+        <!-- outside of the input tag the content is for UI only the value selected sent to the backend by the value attribute only -->
+        <input type="checkbox" id="hobby" value="singing">singing         
+        <input type="checkbox" id="hobby1" value="dancing">dancing 
+        <input type="checkbox" id="hobby2" value="painting">painting 
+         <input type="checkbox" id="hobby4" value="sprots">sports 
+     </div> <br><br>
+     <div>
+        <!-- name attribute shows they are falling in the same category and using radio button we can  select only one thats why the value of name attribute is same for all -->
+        <label for="course">Select Course</label> <br><br>
+        <input type="radio" name="course" value="frontend">Frontend <br>
+        <input type="radio" name="course" value="backend">Backend<br>
+        <input type="radio" name="course" value="fullstack">Fullstack <br>
+     </div> <br><br>
+     <div>
+        <!-- textarea is a defined tag for text space -->
+        <label for="msg">Message</label>
+        <textarea  id="msg" cols="30" rows="6" placeholder="Write Message Here"></textarea>
+     </div> <br><br>
+     <div>
+        <!-- select tag is used to create drop down menue , slected is the keyword that shows at the top and will be by default value -->
+        <label for="brands"> Select Brand</label>
+        <select  id="brands">
+            <option value="Adidas"> Adidas </option>
+            <option value="gucci" selected> Gucci </option>
+            <option value="Allen solly"> Allen solly </option>
+            <option value="Dior"> Dior</option> 
+        </select>
+     </div> <br><br>
+     <div>
+        <!-- datalist tag is the symantic tag new in HTML5 and is used for creating data list a list in which we can enter text value and select from the drop down menue as well value of list attribute is same as value of id attribute of the datalist tag -->
+        <label for="cars"> Select cars </label>
+        <input type="text" id="cars" list="brandss">
+        <datalist id ="brandss">
+            <option value="BMW"></option>
+            <option value="Audi"></option>
+            <option value="RangeRover"></option>
+            <option value="Jaguar"></option>
+        </datalist>
+     </div> <br> <br>
+     <input type="submit" value="send data"> <br><br>
+     <input type="reset" value="reset data">
+    </form>
+
+    
+</body>
+</html>

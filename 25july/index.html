@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width", initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3><em><strong>TABLE</strong></em></h3>
+    <!-- table : we create table row wise -->
+    <!-- cellpadding: distance btw content and border (it is only a HTML attribute)-->
+    <!-- cellspacing: distance btw cells and table border -->
+    <h5>Horizontal Heading Table</h5> <br> <br>
+    <table border="1px" cellpadding="10px" cellspacing="10px" style="background-color: blue;" color: white;>
+        <tr bgcolor="aqua">
+            <th>Name</th>
+            <th>City</th>
+            <th>Contact No</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>Bhopal</td>
+            <td>+91777789898</td>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>Delhi</td>
+            <td>+91898989800</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Mumbai</td>
+            <td>+91778989665</td>
+        </tr>
+
+    </table> <br><br>
+    <!-- vertical heading table -->
+     <h5>vertical Heading Table</h5> <br> <br>
+    <table border="2px" cellpadding="10px" cellspacing="10px">
+        <tr>
+            <th bgcolor="yellow">Name</th>
+            <td>John Doe</td>
+            <td>Alex</td>
+            <td>Joe</td>
+            <td>phill</td>
+            </tr>
+        <tr>
+            <th bgcolor="yellow">City</th>
+            <td>Bhopal</td>
+            <td>Mumbai</td>
+            <td> paris</td>
+            <td>kolkata</td>
+        </tr>
+        
+    </table> <br><br>
+    <!-- table using rowspan and colspan : when one row or coloumn takes up spae of more than one row or col -->
+     <h5>Table using rowspan and colspan</h5> <br> <br>
+    <table border="2px">
+        <tr>
+            <th colspan="2">Language and Frameworks</th>
+        </tr>
+        <tr>
+            <td>Python </td>
+            <td>Django</td>
+        </tr>
+        <tr>
+            <td rowspan="2">javascript</td>
+            <td>React Js</td>
+        </tr>
+        <tr>
+            <td>Vue.js</td>
+        </tr>
+        <tr>
+            <td>Ruby</td>
+            <td>Ruby on Rails</td>
+        </tr>
+    </table>
+</body>
+</html>

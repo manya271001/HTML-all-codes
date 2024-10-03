@@ -1,0 +1,39 @@
+body{
+    background-color: aquamarine;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+}
+.card{
+    border: 1px solid seagreen;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+/* tablet view */
+@media screen and (max-width: 768px){
+ body{
+    background-color: chocolate;
+ }
+ .container{
+    grid-template-columns: 1fr 1fr;
+ }
+}
+/* mobile view */
+@media screen and (max-width: 425px){
+    body{
+        background-color: rgb(243, 191, 243);
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,35 @@
+.container{
+    height: 600px;
+    background-color: rgba(7, 127, 255, 0.984);
+    border: 5px solid rebeccapurple;
+    display: flex;
+    flex-direction: row;
+    /* flex-start center flex-end space-between space-around space-evenly */
+    /* to alogin item across the main axis */
+    justify-content: center;
+    /* to align item across the cross axis */
+    align-items:center ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* shorthand for above 2 properties */
+    flex-flow: row wrap;
+    
+}
+.item{
+    width:100px;
+    height: 100px;
+    background-color: chartreuse;
+    border: 2px red solid;
+    margin: 10px;
+}
+.flex-container{
+    display: flex;
+    gap: 10px;
+    height: auto;
+    margin-top: 50px;
+}
+.box{
+    background-color: aqua;
+    border: 4px solid rgb(0, 128, 0);
+    padding: 10px;
+}

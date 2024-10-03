@@ -1,0 +1,45 @@
+.navbar nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.navbar-left {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.navItem ul.dropdown {
+    display: none;
+}
+
+.navItem:hover ul.dropdown {
+    display: block;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+#sale {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

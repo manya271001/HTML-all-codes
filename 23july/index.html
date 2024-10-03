@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internal css -->
+    <style>
+        div{
+            background-color: blueviolet;
+            color: bisque;
+        }
+        span{
+            color: aqua;
+        }
+        h1{
+            color: brown;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <h1>Cybrom<span>Technology </span></h1>
+    <div>
+        <h2>HEADING</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus autem rerum harum deleniti sunt molestias provident odit neque repellendus saepe?</p>
+    </div>
+    <br>
+    <br>
+    <h3><em>MY FORM</em></h3>
+    <!-- action is for sending data to the backend , the file name backend.php will store the data entered in this form -->
+   <form action="backend.php">
+    <label for="name"> Enter Name </label>
+    <input type="text" id="name" placeholder="Your name">
+    <br> <br>
+    <label for="email">Enter Email</label>
+    <input type="email" id="email" placeholder="Enter Email">
+    <br> <br>
+    <label for="age">Enter Age</label>
+    <input type="number" id="age" placeholder="Your Age">
+    <br><br>
+    <label for="phone number">Contact Number</label>
+    <input type="number" id="phone number" placeholder="contact">
+    <br><br>
+    <label for="DOB">Date of Birth</label>
+    <input type="date" id="DOB" placeholder="Your Birthday">
+    <br><br>
+    <button type="submit">Send Data</button>
+    </form>
+
+</body>
+</html>

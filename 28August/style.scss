@@ -1,0 +1,54 @@
+//variable
+// nesting
+//mixins
+@import "variable";
+@import "mixin";
+body{
+    background-color: $primary-color;
+}
+// header section
+.header{
+    height: 100vh;
+   @include flexprop(column);
+    h1{
+        @include commonCode(80px,red ,1.2rem );
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+    p{
+       @include commonCode(30px,green ,1.3rem );
+        &:hover{
+            color: darkorchid;
+        }
+    }
+}
+.container{
+    @include flexprop(row);
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color: crimson;
+        margin: 10px;
+    }
+}
+.buttons{
+    @include flexprop(row);
+    .btn1{
+        background-color: rgb(178, 210, 53);
+        color: wheat;
+        cursor: pointer;
+        width: 140px;
+        font-size: 24px;
+        padding: 10px;
+        border-radius: 15px;
+        border: none;
+        margin: 20px;
+    }
+    .btn2{
+        @extend .btn1;
+        background-color: darkorange;
+    }
+}
+

@@ -1,0 +1,30 @@
+/* universal selector */
+*{
+    background-color: rgb(156, 181, 173);
+    margin: 0;
+    padding: 0;
+    
+    
+}
+/* Element Selector : selecting only one element at a time*/
+/* External css */
+h1{
+    background-color: thistle;
+    color: cadetblue;
+}
+/* ID selector: unique for every element*/
+#main-heading{
+    background-color: rgb(136, 193, 242);
+    color: red;
+}
+
+/* class selector: multiple elements could have same class name
+multiple elements could have same class and a single elemetn could have multiple class too */
+.group{
+    background-color: cornflowerblue;
+    color: rgb(58, 6, 108);
+}
+.group1{
+    text-align: center;
+    font-size: 5x;
+}
